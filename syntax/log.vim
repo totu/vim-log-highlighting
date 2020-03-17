@@ -10,11 +10,26 @@ endif
 let s:cpo_save = &cpoptions
 set cpoptions&vim
 
+" KONE
+"---------------------------------------------------------------------------
+syn match Number display '\(onInBank\|InBank\|Cnv\|CNV C\|CNV N\|CNV\|CallMaster\|KMPStack\|KMP\|Configure\)'
+syn match Comment display '\(FAIL\|OFFLINE\|OFF\| NOT PRESENT\| NOT \)'
+syn match ErrorMsg display '\(Application main() exiting\|gcapp running\|.*AKAK.*\|.*HSHS.*\|.*ULIULI.*\|.*DEBUGGG.*\)'
+syn match Function display '\(\[ON\]\|KCECPU\|KCECMD\|KCELIO\|KCELift\|KCERiser\|KCE\|kcegc\|UNLOCKED\|INBANK\|IN_BANK\|Added subscription\)'
+syn match Type display '\(Starting subsystems...\|Configuring subsystems...\|Initializing subsystems...\|Initialize\|AAP\|PfLock\|LockDispatcher\|Dispatcher\|Dispatch\|Parking\|Park\|ConfigMaster\|LonNodeManager\|LON_DOP\|DopCtrl\|DinController\|DOP\|DopDc\|DopManagerImpl\|DopManager\|DopEntryMode\|sendDopEntryMode\|createDopLockingState\|DopLockingState\|Dop\|SCIF\|DCSIF\|RCGIF\|LonGtwConnectionDisconnected\|LonGtw\|LONGTW\|Dma\|DMA\|DeviceManagementAgent\|LON\)'
+syn match Repeat display '\(Shutdown on request\|Shutdown\|Closing all sessions\|Request stop\|Stopping application\|Stopping subsystems\|postStop\|PostStop\|Stop\|stopped\|stop\|Connection refused\|Disconnected\|Erasing\|UnregisterDop\|LocalServiceDown\|Unregistering\|Removing\|disconnection\|NONE\|fpo\|FPO\|sfs\|fsm\|GCAC\|CallSequencer\|LCE\|SDP\|SdpHandler\|Sdp\|sdp\)'
+syn match Debug display '\(GcParams\|AppContextManager\|SignalingManager\|TaskExecutor\|AllocEngineImp\|AllocLibProxyImp\|AllocEngine\|AllocLib\|MasterStatusRequester\|KONE\|KRMLAB\|Group\|TrafficForecasterImp\|TrafficForecaster\|Supervisor\|drvr\|Scheduler\|NodeManagerDC\|NodeManager\|SPADE\|SpadeServer\|Spade\|spadesrv\|spade\)'
+syn match WarningMsg display '\(OEO\|Oeo\|InvasionDetector\|Invasion\|EVAC\)'
+syn match Special display '\(ATS\|Ats\|link\|FailWriter\|node.d\|noded\|node\|PersistenceManager\|AvnpLayer\|AVNP\|LockingManager\|ModeManager\|CoreSubsystemManager\|SubsystemManager\|ControllerFarm\)'
+syn match Identifier display '\(GcSecurityHandler\|GcappArgs\|GcappContext\|SppController\|Spp\|EpsController\|LiftDevice\|lifts\|lift\|MqttDriver\|MQTT\|SFS\|Sfs\|SfsClient\|SfsHelper\|InventoryHelper\|Inventory\)'
+
 
 " Operators
 "---------------------------------------------------------------------------
 syn match logOperator display '[;,\?\:\.\<=\>\~\/\@\&\!$\%\&\+\-\|\^(){}\*#]'
 syn match logBrackets display '[\[\]]'
+syn match Special display '[\(\)]'
+syn match Identifier display '[\{\}]'
 syn match logEmptyLines display '-\{3,}'
 syn match logEmptyLines display '\*\{3,}'
 syn match logEmptyLines display '=\{3,}'
@@ -97,7 +112,7 @@ syn keyword logLevelError ERROR ERR FAILURE SEVERE
 syn keyword logLevelWarning WARNING WARN
 syn keyword logLevelNotice NOTICE
 syn keyword logLevelInfo INFO
-syn keyword logLevelDebug DEBUG FINE
+syn keyword logLevelDebug DEBUG FINE Debug
 syn keyword logLevelTrace TRACE FINER FINEST
 
 
