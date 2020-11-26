@@ -12,16 +12,16 @@ set cpoptions&vim
 
 " KONE
 "---------------------------------------------------------------------------
-syn match Number display '\(onInBank\|InBank\|Cnv\|CNV C\|CNV N\|CNV\|CallMaster\|KMPStack\|KMP\|Configure\)'
-syn match Comment display '\(FAIL\|OFFLINE\|OFF\| NOT PRESENT\| NOT \)'
-syn match ErrorMsg display '\(Application main() exiting\|gcapp running\|.*AKAK.*\|.*HSHS.*\|.*ULIULI.*\|.*DEBUGGG.*\)'
-syn match Function display '\(\[ON\]\|KCECPU\|KCECMD\|KCELIO\|KCELift\|KCERiser\|KCE\|kcegc\|UNLOCKED\|INBANK\|IN_BANK\|Added subscription\)'
-syn match Type display '\(Starting subsystems...\|Configuring subsystems...\|Initializing subsystems...\|Initialize\|AAP\|PfLock\|LockDispatcher\|Dispatcher\|Dispatch\|Parking\|Park\|ConfigMaster\|LonNodeManager\|LON_DOP\|DopCtrl\|DinController\|DOP\|DopDc\|DopManagerImpl\|DopManager\|DopEntryMode\|sendDopEntryMode\|createDopLockingState\|DopLockingState\|Dop\|SCIF\|DCSIF\|RCGIF\|LonGtwConnectionDisconnected\|LonGtw\|LONGTW\|Dma\|DMA\|DeviceManagementAgent\|LON\)'
-syn match Repeat display '\(Shutdown on request\|Shutdown\|Closing all sessions\|Request stop\|Stopping application\|Stopping subsystems\|postStop\|PostStop\|Stop\|stopped\|stop\|Connection refused\|Disconnected\|Erasing\|UnregisterDop\|LocalServiceDown\|Unregistering\|Removing\|disconnection\|NONE\|fpo\|FPO\|sfs\|fsm\|GCAC\|CallSequencer\|LCE\|SDP\|SdpHandler\|Sdp\|sdp\)'
-syn match Debug display '\(GcParams\|AppContextManager\|SignalingManager\|TaskExecutor\|AllocEngineImp\|AllocLibProxyImp\|AllocEngine\|AllocLib\|MasterStatusRequester\|KONE\|KRMLAB\|Group\|TrafficForecasterImp\|TrafficForecaster\|Supervisor\|drvr\|Scheduler\|NodeManagerDC\|NodeManager\|SPADE\|SpadeServer\|Spade\|spadesrv\|spade\)'
-syn match WarningMsg display '\(OEO\|Oeo\|InvasionDetector\|Invasion\|EVAC\)'
-syn match Special display '\(ATS\|Ats\|link\|FailWriter\|node.d\|noded\|node\|PersistenceManager\|AvnpLayer\|AVNP\|LockingManager\|ModeManager\|CoreSubsystemManager\|SubsystemManager\|ControllerFarm\)'
-syn match Identifier display '\(GcSecurityHandler\|GcappArgs\|GcappContext\|SppController\|Spp\|EpsController\|LiftDevice\|lifts\|lift\|MqttDriver\|MQTT\|SFS\|Sfs\|SfsClient\|SfsHelper\|InventoryHelper\|Inventory\)'
+syn match Number display '\(FULL_SERVICE\|SUBSCRIBE\|onInBank\|InBank\|Cnv\|CNV C\|CNV N\|CNV\|CallMaster\|KMPStack\|KMP\|Configure\)'
+syn match ErrorMsg display '\(Application main() exiting\|gcapp running\|.*TOP1.*\|.*AKAK.*\|.*HSHS.*\|.*popo.*\|.*ULIULI.*\|.*DEBUGGG.*\|.*prpr.*\)'
+syn match Function display '\(NORMAL_PERMISSION\|RETURN_SUCCESSFUL\|ON\|client-\d\|\[ON\]\|KCECPU\|KCECMD\|KCELIO\|KCELift\|KCERiser\|KCE\|kcegc-\d\|kcegc\|UNLOCKED\|INBANK\|IN_BANK\|Added subscription\)'
+syn match Comment display '\(NORMAL_PERMISSION_CANCELLED\|OUT_OF_BANK\|NOTINBANK\|NOT_IN_BANK\|FAIL\|OFFLINE\|OFF\| NOT PRESENT\| NOT \)'
+syn match Type display '\(EMERGENCY_POWER_DRIVE\|BUSY\|PUBLISH\|Init\|Starting subsystems...\|Configuring subsystems...\|Initializing subsystems...\|Initialize\|AAP\|PfLock\|LockDispatcher\|Dispatcher\|Dispatch\|Parking\|Park\|ConfigMaster\|LonNodeManager\|LON_DOP\|DopCtrl\|DinController\|DOP\|DopDc\|DopManagerImpl\|DopManager\|DopEntryMode\|sendDopEntryMode\|createDopLockingState\|DopLockingState\|Dop\|SCIF\|DCSIF\|RCGIF\|LonGtwConnectionDisconnected\|LonGtw\|LONGTW\|Dma\|DMA\|DeviceManagementAgent\|LON\)'
+syn match Repeat display '\(PERMISSION_CANCELLED\|Shutdown on request\|Shutdown\|Closing all sessions\|Request stop\|Stopping application\|Stopping subsystems\|postStop\|PostStop\|Stop\|stopped\|stop\|Connection refused\|Disconnected\|Erasing\|UnregisterDop\|LocalServiceDown\|Unregistering\|Removing\|disconnection\|NONE\|fpo\|FPO\|sfs\|fsm\|GCAC\|CallSequencer\|LCE\|SDP\|SdpHandler\|Sdp\|sdp\)'
+syn match Debug display '\(NO_NEW_CALLS\|GcParams\|AppContextManager\|SignalingManager\|TaskExecutor\|AllocEngineImp\|AllocLibProxyImp\|AllocEngine\|AllocLib\|MasterStatusRequester\|KONE\|KRMLAB\|Group\|TrafficForecasterImp\|TrafficForecaster\|Supervisor\|drvr\|Scheduler\|NodeManagerDC\|NodeManager\|SPADE\|SpadeServer\|Spade\|spadesrv\|spade\)'
+syn match WarningMsg display '\(DISCONNECT\|OEO\|Oeo\|InvasionDetector\|Invasion\|EVAC\)'
+syn match Special display '\(INACTIVE\|ATS\|Ats\|link\|FailWriter\|node.d\|noded\|node\|PersistenceManager\|AvnpLayer\|AVNP\|LockingManager\|ModeManager\|CoreSubsystemManager\|SubsystemManager\|ControllerFarm\)'
+syn match Identifier display '\(RETURN_PERMISSION\|SUBACK\|CONNACK\|GcSecurityHandler\|GcappArgs\|GcappContext\|SppController\|Spp\|EpsController\|LiftDevice\|lifts\|lift\|MqttDriver\|MQTT\|SFS\|Sfs\|SfsClient\|SfsHelper\|InventoryHelper\|Inventory\)'
 
 
 " Operators
@@ -72,6 +72,7 @@ syn match logTimeZone '\d\{4} [A-Z]\{2,5}\>' contained
 " Entities
 "---------------------------------------------------------------------------
 syn match logUrl        'http[s]\?:\/\/[^\n|,; '"]\+'
+syn match logUrl        'kone/[0-9a-zA-Z+/_]*'
 syn match logDomain     /\v(^|\s)(\w|-)+(\.(\w|-)+)+\s/
 syn match logUUID       '\w\{8}-\w\{4}-\w\{4}-\w\{4}-\w\{12}'
 syn match logMD5        '\<[a-z0-9]\{32}\>'
