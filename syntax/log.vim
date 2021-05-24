@@ -13,7 +13,7 @@ set cpoptions&vim
 " KONE
 "---------------------------------------------------------------------------
 syn match Number display '\(FULL_SERVICE\|SUBSCRIBE\|onInBank\|InBank\|Cnv\|CNV C\|CNV N\|CNV\|CallMaster\|KMPStack\|KMP\|Configure\)'
-syn match ErrorMsg display '\(Application main() exiting\|gcapp running\|.*TOP1.*\|.*AKAK.*\|.*HSHS.*\|.*popo.*\|.*ULIULI.*\|.*DEBUGGG.*\|.*prpr.*\)'
+syn match ErrorMsg display '\(Application main() exiting\|gcapp running\|.*TOP1.*\|.*AKAK.*\|.*HSHS.*\|.*popo.*\|.*ULIULI.*\|.*AWAW.*\|.*DEBUGGG.*\|.*prpr.*\)'
 syn match Function display '\(NORMAL_PERMISSION\|RETURN_SUCCESSFUL\|ON\|client-\d\|\[ON\]\|KCECPU\|KCECMD\|KCELIO\|KCELift\|KCERiser\|KCE\|kcegc-\d\|kcegc\|UNLOCKED\|INBANK\|IN_BANK\|Added subscription\)'
 syn match Comment display '\(NORMAL_PERMISSION_CANCELLED\|OUT_OF_BANK\|NOTINBANK\|NOT_IN_BANK\|FAIL\|OFFLINE\|OFF\| NOT PRESENT\| NOT \)'
 syn match Type display '\(EMERGENCY_POWER_DRIVE\|BUSY\|PUBLISH\|Init\|Starting subsystems...\|Configuring subsystems...\|Initializing subsystems...\|Initialize\|AAP\|PfLock\|LockDispatcher\|Dispatcher\|Dispatch\|Parking\|Park\|ConfigMaster\|LonNodeManager\|LON_DOP\|DopCtrl\|DinController\|DOP\|DopDc\|DopManagerImpl\|DopManager\|DopEntryMode\|sendDopEntryMode\|createDopLockingState\|DopLockingState\|Dop\|SCIF\|DCSIF\|RCGIF\|LonGtwConnectionDisconnected\|LonGtw\|LONGTW\|Dma\|DMA\|DeviceManagementAgent\|LON\)'
